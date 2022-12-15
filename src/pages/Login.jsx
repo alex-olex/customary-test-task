@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Navigate } from 'react-router-dom/dist'
 
 function Login() {
-    const [email, setEmail] = useState("gracemckenna26@gmail.com")
-    const [password, setPassword] = useState("mckennagrace26")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
     const isAuth = useSelector(state => state.auth.isAuth)
     const dispatch = useDispatch()
     const onLogin = async (e) => {
